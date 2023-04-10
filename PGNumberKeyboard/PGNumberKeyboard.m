@@ -22,7 +22,7 @@
     if (self = [super init]) {
         self.textField = textField;
         self.verify = true;
-        self.backgroundColor = [UIColor greenColor];
+        self.backgroundColor = [UIColor lightGrayColor];
         self.frame = CGRectMake(0, keyboardScreenHeight - 150, keyboardScreenHeight, 150);
         [self setupKeyBoard];
         [textField reloadInputViews];
@@ -125,7 +125,7 @@
     confirmbutton.backgroundColor = [UIColor grayColor];
     [confirmbutton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     confirmbutton.titleLabel.font=[UIFont systemFontOfSize:20];
-    [confirmbutton setTitle:@"确 定" forState:UIControlStateNormal];
+    [confirmbutton setTitle:@"OK" forState:UIControlStateNormal];
     [confirmbutton addTarget:self action:@selector(keyBoardAction:) forControlEvents:UIControlEventTouchUpInside];
     confirmbutton.tag=13;
     [self addSubview:confirmbutton];
